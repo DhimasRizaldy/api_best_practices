@@ -1,0 +1,32 @@
+### create an post
+POST http://localhost:3000/api/v1/posts
+Content-Type: application/json
+
+{
+    "title":"buat post lewat api",
+    "body":"buat post body lewat api"
+}
+
+
+### get all post
+GET http://localhost:3000/api/v1/posts?search=hasul
+
+
+
+### get detai post
+GET http://localhost:3000/api/v1/posts/1
+
+
+### update post
+PUT http://localhost:3000/api/v1/posts/3
+Content-Type: application/json
+
+{
+    "title":"Buku Pemrograman Golang",
+    "body":"Materi pembelajaran Golang backend dan frontend"
+}
+
+
+### delete post
+DELETE http://localhost:3000/api/v1/posts/15
+Content-Type: application/json
